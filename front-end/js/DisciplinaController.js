@@ -8,6 +8,9 @@ app.controller('DisciplinaController', function($scope) {
 		$scope.disciplina = {};
 	}
 
-
+	$scope.delete = function(disciplina) {
+		var index = $scope.listaDisciplinas.indexOf(disciplina)
+		$scope.listaDisciplinas.splice(index,1);
+	}
 });
 	
